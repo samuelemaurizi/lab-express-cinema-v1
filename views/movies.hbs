@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <div class="header pb-2">
+    <h1>Ironhack Cinema</h1>
+    <h4>Click on the movie to check the showtime</h4>
+  </div>
+  <div class="pt-2">
+    <div class="d-flex flex-row flex-wrap justify-content-between">
+      {{#each movies}}
+      <div>
+        {{>moviePartial this}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
